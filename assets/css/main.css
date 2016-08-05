@@ -1551,7 +1551,7 @@
 	}
 
 	body {
-		background: #f5f7fa;
+	 
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
 		color: #52575c;
@@ -1984,6 +1984,7 @@ box-shadow: 5px 5px 30px -10px rgba(0,0,0,0.75);
 
 	.image-wrapper {
 		position: relative;
+		    margin-bottom: -2em;
 	}
 
 		.image-wrapper .image {
@@ -2003,6 +2004,8 @@ box-shadow: 5px 5px 30px -10px rgba(0,0,0,0.75);
 		
 			 
 		}
+
+		.feature  h4{font-weight: 600;}
 
 	#header-wrapper {
 		position: relative;
@@ -2043,7 +2046,7 @@ box-shadow: 5px 5px 30px -10px rgba(0,0,0,0.75);
 
 	#logo {
 		position: absolute;
-		z-index: 1;
+		z-index: 2;
 		top: 0;
 		left: 50%;
 		width: 15em;
@@ -2077,8 +2080,8 @@ box-shadow: 5px 5px 30px -10px rgba(0,0,0,0.75);
 		width: 100%;
 		height: 4em;
 		line-height: 4em;
-		background-color: #475e00;
-    opacity: 0.7;
+		background: rgba(52, 27, 43, 0.5);
+		z-index: 1;
 	}
 
 		#nav > ul {
@@ -2101,7 +2104,7 @@ box-shadow: 5px 5px 30px -10px rgba(0,0,0,0.75);
 					border: 0;
 					border: solid 1px rgba(255, 255, 255, 0);
 					border-radius: 0.35em;
-					padding: 0.3em 1em 0.3em 1em;
+					padding: 0em 1em 0.3em 1em;
 					-moz-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
 					-webkit-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
 					-o-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
@@ -2120,7 +2123,7 @@ box-shadow: 5px 5px 30px -10px rgba(0,0,0,0.75);
 				}
 
 				#nav > ul > li.break {
-					margin-left: 20em;
+					margin-left: 23em;
 				}
 
 	.dropotron {
@@ -2963,3 +2966,30 @@ box-shadow: 5px 5px 30px -10px rgba(0,0,0,0.75);
 			}
 
 	}
+
+	.largeFont{		 
+	    height: 4em;
+	   
+	    background: rgba(255, 255, 255, 0.15);
+	    border: solid 1px !important;
+	    border-color: #fff;
+	    border-color: rgba(255, 255, 255, 0.75);
+	    border-top: 0;
+	    border-radius: 0 0 0.35em 0.35em;
+	    color: #fff;
+	    display: inline-block;
+	    
+	    
+	    text-align: center;
+	    
+	}
+
+	#cover {    
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 27, 43, 0.5);
+}
