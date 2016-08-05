@@ -1938,6 +1938,8 @@ box-shadow: 5px 5px 30px -10px rgba(0,0,0,0.75);
 		padding: 0.8em 2em 0.8em 2em;
 		cursor: pointer;
 		outline: 0;
+		    background-color: rgba(13, 136, 10, 0.5);
+    color: white;
 	}
 
 		input[type="button"]:hover,
