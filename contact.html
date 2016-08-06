@@ -35,15 +35,15 @@
 					<div id="header" class="container">
 
 						<!-- Logo -->
-							<h1 id="logo"><a href="index.html">BasketBunch</a></h1>
+							<h1 id="logo"><a href="index.html">BasketBunches</a></h1>
 
 						<!-- Nav -->
 						<nav id="nav">
 								<ul>
 									<li><a href="index.html">Home</a></li>
 									<li><a href="fruits.html">Export Fruits</a></li>
-									<li><a href="importedfruits.html">Import Fruits</a></li>
-									<li class="break"><a href="vegetables.html">Export Vegetables</a></li>
+									<li><a href="vegetables.html">Export Vegetables</a></li>
+									<li class="break"><a href="importedfruits.html">Import Fruits</a></li>
 									<li><a href="importedvegetables.html">Import Vegetables</a></li>
 									<li><a class="largeFont" href="contact.html">Contact Us</a></li>
 								</ul>
@@ -90,28 +90,37 @@
 							</section>
 							<section class="6u 12u(narrower)">
 								<div class="row 0%">
-									<ul class="12u 12u(mobile)">
+									
 
+
+	<div style='overflow:hidden;height:240px;width:480px;border: solid 1px #d2d7dc; border-radius: 0.35em;'>
+<div id='gmap_canvas' style='height:240px;width:480px;border: solid 1px #d2d7dc;border-radius: 0.35em;'></div>
+  <style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
+
+  
+						</div>
+						<ul class="12u 12u(mobile)">
 									VANELLI MOHAMMED <br />
 							 
 						 
 							 
-								<li class="icon"><a href="#"><span class="extra">Address/</span>House No. 73, Ground floor, Gayathri Layout, K.R.Puram, Bangalore </a></li>
+							 
 								<li class="icon"><a href="#"><span class="extra">Tel: /</span>+91 9620959118</a></li>
-								<li class="icon"><a href="#"><span class="extra">Email: </span>vanelli@basketbunch.in, shafi16420@gmail.com</a></li>
-								<li class="icon"><a href="www.basketbunch.in"><span class="extra">Website: </span>www.basketbunch.in</a></li>
+								<li class="icon"><a href="#"><span class="extra">Email: </span>vanelli@basketbunches.com, shafi16420@gmail.com</a></li>
+								<li class="icon"><a href="www.basketbunches.com"><span class="extra">Website: </span>www.basketbunches.com</a></li>
 
 									</ul>
 								 
 								</div>
 							</section>
-						</div>
+
+
 						</header>
 					 
 					</div>
 					<div id="copyright" class="container">
 						<ul class="menu">
-							<li>@Basketbunch 2016</li>  
+							<li>@BasketBunches 2016</li>  
 						</ul>
 					</div>
 				</div>
@@ -126,6 +135,31 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+			<script type='text/javascript'>
+
+			function init_map() {
+			    var myOptions = {
+			        zoom: 14,
+			        center: new google.maps.LatLng(13.0171136,77.70729089999998),
+			        mapTypeId: google.maps.MapTypeId.ROADMAP
+			    };
+			    map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+			    marker = new google.maps.Marker({
+			        map: map,
+			        position: new google.maps.LatLng(13.0091152, 77.70544180000002)
+			    });
+			    infowindow = new google.maps.InfoWindow({
+			        content: '<strong>BasketBunches</strong><br>House No. 73, Ground floor, Gayathri Layout, K.R.Puram, Bangalore<br>'
+			    });
+			    google.maps.event.addListener(marker, 'click', function() {
+			        infowindow.open(map, marker);
+			    });
+			    infowindow.open(map, marker);
+			}
+			google.maps.event.addDomListener(window, 'load', init_map);
+
+			</script>
 
 	</body>
 </html>
