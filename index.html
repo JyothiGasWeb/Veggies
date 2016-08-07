@@ -19,7 +19,7 @@
 -->
 <html>
 	<head>
-		<title>BasketsBunch</title>
+		<title>BasketBunches</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -52,7 +52,7 @@
 					</div>
 
 					<!-- Hero -->
-						<section id="hero" class="container">
+						<section id="hero" class="container" style="opacity:0">
 							<header>
 								<h2>Welcome to VANELLI MOHAMMED AKA BASKETBUNCHES	</h2>
 							</header>
@@ -77,6 +77,10 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
+			<script>
+			$("#hero").delay(1000).animate({ opacity: 1 }, 700)
+			</script>
 
 	</body>
 </html>
